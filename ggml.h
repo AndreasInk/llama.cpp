@@ -174,6 +174,8 @@
 //
 #ifndef LLAMA_DEFINED_SYMBOLS
 #define LLAMA_DEFINED_SYMBOLS
+
+
 #ifdef GGML_SHARED
 #    if defined(_WIN32) && !defined(__MINGW32__)
 #        ifdef GGML_BUILD
