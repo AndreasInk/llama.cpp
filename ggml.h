@@ -1913,8 +1913,7 @@ extern "C" {
         GGML_LINESEARCH_INVALID_PARAMETERS,
     };
 
-    typedef void (*ggml_opt_callback)(void * data, int accum_step, float * sched, bool * cancel);
-    typedef void (*ggml_log_callback)(enum ggml_log_level level, const char * text, void * user_data);
+    
 
     // optimization parameters
     //
@@ -2252,4 +2251,6 @@ extern "C" {
 #ifdef  __cplusplus
 }
 #endif
+typedef void (*ggml_opt_callback)(void * data, int accum_step, float * sched, bool * cancel);
+typedef void (*ggml_log_callback)(enum ggml_log_level level, const char * text, void * user_data);
 #endif
